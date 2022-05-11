@@ -13,8 +13,8 @@
 
 .images {
   grid-column: 1 / 3;
-  width: 95vw;
-  max-height: 53vw;
+  width: 63.3vw;
+  height: 35.8vw;
   border: 2px solid black;
   overflow: hidden;
   margin: 0 auto
@@ -22,8 +22,9 @@
 
 .images_wripper {
   display: flex;
-  width: 380vw;
-  max-height: 146vw;
+  column-gap: 1vw;
+  width: 256vw;
+  height: 35.6vw;
   border: 2px solid black;
   overflow: hidden;
   margin: 0 auto;
@@ -38,7 +39,7 @@
 
 .image_item {
   margin-left: 0;
-  width: 100vw;
+  width: 64vw;
   display: inline-block;
   transition: .5s;
 }
@@ -95,19 +96,19 @@
 }
 
 #image_1:checked ~ .slider .images .images_wripper {
-  margin-left: 0;
+  margin-left: -0.2vw;
 }
 
 #image_2:checked ~ .slider .images .images_wripper {
-  margin-left: -95vw;
+  margin-left: -64.5vw;
 }
 
 #image_3:checked ~ .slider .images .images_wripper {
-  margin-left: -190vw;
+  margin-left: -128.7vw;
 }
 
 #image_4:checked ~ .slider .images .images_wripper {
-  margin-left: -285vw;
+  margin-left: -192.9vw;
 }
 
 /*  */
