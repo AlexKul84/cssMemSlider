@@ -1,4 +1,10 @@
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .images {
+  grid-column: 1 / 3;
   width: 84vw;
   max-height: 46vw;
   border: 2px solid black;
