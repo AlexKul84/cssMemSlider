@@ -1,0 +1,55 @@
+.images {
+  width: 224px;
+  height: 116px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.image_item {
+  margin-left: 0;
+  width: 200px;
+  display: inline-block;
+}
+
+.image {
+  width: 100%;
+}
+
+.descriptions {
+  width: 224px;
+  height: 46px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.description {
+  margin-left: 0;
+  width: 200px;
+  display: inline-block;
+}
+
+.radio {
+  visibility: hidden;
+}
+
+#image_1:checked ~ .slider .images .image_1, 
+#image_1:checked ~ .slider .descriptions .description_1 {
+  margin-left: 0;
+}
+
+#image_2:checked ~ .slider .images .image_1, 
+#image_2:checked ~ .slider .descriptions .description_1 {
+  margin-left: -200px;
+}
+
+#image_3:checked ~ .slider .images .image_1,
+#image_3:checked ~ .slider .descriptions .description_1 {
+  margin-left: -400px;
+}
+
+#image_4:checked ~ .slider .images .image_1, 
+#image_4:checked ~ .slider .descriptions .description_1 {
+  margin-left: -600px;
+}
