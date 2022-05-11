@@ -1,7 +1,8 @@
 .slider {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto
+  grid-template-columns: 48.8vw 15vw;
+  margin: 0px auto;
+  width: 63.3vw;
 }
 
 @media (max-width: 768px) {
@@ -49,27 +50,44 @@
 }
 
 .descriptions {
-  width: 45vw;
-  max-height: 8vh;
+  width: 48.6vw;
+  height: 8vh;
   border: 2px solid black;
   overflow: hidden;
-  margin-left: 20px;
+  transition: .5s;
+}
+
+.description_wrapper {
+  display: flex;
+  column-gap: 1vw;
+  width: 200vw;
+  height: 8vw;
+  border: 2px solid black;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.buttons {
+  width: 16vw;
 }
 
 @media (max-width: 768px) {
   .descriptions {
     grid-row: 3 / 4;
-    margin: 0 auto;
+    justify-self: start;
   }
   .buttons {
     grid-row: 2 / 3;
-    margin: 0 auto;
+    width: 8rem;
+    justify-self: center;
   }
 }
 
+
+
 .button {
   display: inline-block;
-  padding: 20px;
+  padding: 1vw;
   cursor: pointer;
 }
 
@@ -87,8 +105,9 @@
 
 .description {
   margin-left: 0;
-  width: 40vw;
+  width: 48.6vw;
   display: inline-block;
+  transition: .5s;
 }
 
 .radio {
@@ -113,20 +132,20 @@
 
 /*  */
 
-#image_1:checked ~ .slider .descriptions .description_1 {
-  margin-left: 0;
+#image_1:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -0.2vw;
 }
 
-#image_2:checked ~ .slider .descriptions .description_1 {
-  margin-left: -40vw;
+#image_2:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -49.8vw;
 }
 
-#image_3:checked ~ .slider .descriptions .description_1 {
-  margin-left: -80vw;
+#image_3:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -99.4vw;
 }
 
-#image_4:checked ~ .slider .descriptions .description_1 {
-  margin-left: -120vw;
+#image_4:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -149vw;
 }
 
 /*  */
