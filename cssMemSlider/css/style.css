@@ -48,6 +48,7 @@
 @media (max-width: 768px) {
   .descriptions {
     grid-row: 3 / 4;
+    margin: 0 auto;
   }
   .buttons {
     grid-row: 2 / 3;
