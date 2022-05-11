@@ -1,6 +1,7 @@
 .slider {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto
 }
 
 @media (max-width: 768px) {
@@ -16,7 +17,7 @@
   max-height: 46vw;
   border: 2px solid black;
   overflow: hidden;
-  margin-left: 20px;
+  margin: 0 auto
 }
 
 @media (max-width: 768px) {
@@ -50,7 +51,26 @@
   }
   .buttons {
     grid-row: 2 / 3;
+    margin: 0 auto;
   }
+}
+
+.button {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  /* cursor: pointer; */
+}
+
+.btn:hover {
+  background-color: blue;
 }
 
 .description {
@@ -94,3 +114,40 @@
 #image_4:checked ~ .slider .descriptions .description_1 {
   margin-left: -120vw;
 }
+
+/*  */
+
+#image_1:checked ~ .slider .buttons .button .btn_1 {
+  background-color: blue;
+}
+
+#image_2:checked ~ .slider .buttons .button .btn_2 {
+  background-color: blue;
+}
+
+#image_3:checked ~ .slider .buttons .button .btn_3 {
+  background-color: blue;
+}
+
+#image_4:checked ~ .slider .buttons .button .btn_4 {
+  background-color: blue;
+}
+
+/*  */
+
+#image_1:hover ~ .slider .buttons .button .btn_1 {
+  background-color: blue;
+}
+
+#image_2:hover ~ .slider .buttons .button .btn_2 {
+  background-color: blue;
+}
+
+#image_3:hover ~ .slider .buttons .button .btn_3 {
+  background-color: blue;
+}
+
+#image_4:hover ~ .slider .buttons .button .btn_4 {
+  background-color: blue;
+}
+
