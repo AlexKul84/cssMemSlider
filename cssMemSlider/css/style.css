@@ -61,7 +61,7 @@ html, body, .container {
 
 .descriptions {
   width: 42vw;
-  height: 8vh;
+  height: 10vh;
   overflow: hidden;
   transition: .5s;
 }
@@ -142,19 +142,19 @@ html, body, .container {
 /*  */
 
 #image_1:checked ~ .slider .descriptions .description_wrapper {
-  margin-left: -0.2vw;
+  margin-left: 0.1vw;
 }
 
 #image_2:checked ~ .slider .descriptions .description_wrapper {
-  margin-left: -49.8vw;
+  margin-left: -49.4vw;
 }
 
 #image_3:checked ~ .slider .descriptions .description_wrapper {
-  margin-left: -99.4vw;
+  margin-left: -99vw;
 }
 
 #image_4:checked ~ .slider .descriptions .description_wrapper {
-  margin-left: -149vw;
+  margin-left: -148.7vw;
 }
 
 /*  */
