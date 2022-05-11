@@ -13,11 +13,21 @@
 
 .images {
   grid-column: 1 / 3;
-  width: 84vw;
-  max-height: 46vw;
+  width: 95vw;
+  max-height: 53vw;
   border: 2px solid black;
   overflow: hidden;
   margin: 0 auto
+}
+
+.images_wripper {
+  display: flex;
+  width: 380vw;
+  max-height: 146vw;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: .5s;
 }
 
 @media (max-width: 768px) {
@@ -28,7 +38,7 @@
 
 .image_item {
   margin-left: 0;
-  width: 80vw;
+  width: 100vw;
   display: inline-block;
   transition: .5s;
 }
@@ -84,21 +94,23 @@
   visibility: hidden;
 }
 
-#image_1:checked ~ .slider .images .image_1 {
+#image_1:checked ~ .slider .images .images_wripper {
   margin-left: 0;
 }
 
-#image_2:checked ~ .slider .images .image_1 {
-  margin-left: -80vw;
+#image_2:checked ~ .slider .images .images_wripper {
+  margin-left: -95vw;
 }
 
-#image_3:checked ~ .slider .images .image_1 {
-  margin-left: -160vw;
+#image_3:checked ~ .slider .images .images_wripper {
+  margin-left: -190vw;
 }
 
-#image_4:checked ~ .slider .images .image_1 {
-  margin-left: -240vw;
+#image_4:checked ~ .slider .images .images_wripper {
+  margin-left: -285vw;
 }
+
+/*  */
 
 #image_1:checked ~ .slider .descriptions .description_1 {
   margin-left: 0;
