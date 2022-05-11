@@ -1,3 +1,12 @@
+html, body, .container {
+  height: 100%;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #25282a;
+}
+
 .slider {
   display: grid;
   grid-template-columns: 48.8vw 15vw;
@@ -16,9 +25,10 @@
   grid-column: 1 / 3;
   width: 63.3vw;
   height: 35.8vw;
-  border: 2px solid black;
   overflow: hidden;
-  margin: 0 auto
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .images_wripper {
@@ -50,9 +60,8 @@
 }
 
 .descriptions {
-  width: 48.6vw;
+  width: 42vw;
   height: 8vh;
-  border: 2px solid black;
   overflow: hidden;
   transition: .5s;
 }
@@ -61,14 +70,13 @@
   display: flex;
   column-gap: 1vw;
   width: 200vw;
-  height: 8vw;
-  border: 2px solid black;
   overflow: hidden;
   transition: .5s;
 }
 
 .buttons {
   width: 16vw;
+  justify-self: end;
 }
 
 @media (max-width: 768px) {
@@ -95,12 +103,13 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  border: 1px solid black;
-  /* cursor: pointer; */
+  background-color: #70aafe;
+  border: 1px solid #70aafe;
+  border-radius: 50%;
 }
 
 .btn:hover {
-  background-color: blue;
+  background-color: #70aafe;
 }
 
 .description {
@@ -151,36 +160,62 @@
 /*  */
 
 #image_1:checked ~ .slider .buttons .button .btn_1 {
-  background-color: blue;
+  background-color: #25282a;
 }
 
 #image_2:checked ~ .slider .buttons .button .btn_2 {
-  background-color: blue;
+  background-color: #25282a;
 }
 
 #image_3:checked ~ .slider .buttons .button .btn_3 {
-  background-color: blue;
+  background-color: #25282a;
 }
 
 #image_4:checked ~ .slider .buttons .button .btn_4 {
-  background-color: blue;
+  background-color: #25282a;
 }
 
 /*  */
 
 #image_1:hover ~ .slider .buttons .button .btn_1 {
-  background-color: blue;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
 }
 
 #image_2:hover ~ .slider .buttons .button .btn_2 {
-  background-color: blue;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
 }
 
 #image_3:hover ~ .slider .buttons .button .btn_3 {
-  background-color: blue;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
 }
 
 #image_4:hover ~ .slider .buttons .button .btn_4 {
-  background-color: blue;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+/*  */
+
+#image_1:checked:hover ~ .slider .buttons .button .btn_1 {
+  background-color: #25282a;
+}
+
+#image_2:checked:hover ~ .slider .buttons .button .btn_2 {
+  background-color: #25282a;
+}
+
+#image_3:checked:hover ~ .slider .buttons .button .btn_3 {
+  background-color: #25282a;
+}
+
+#image_4:checked:hover ~ .slider .buttons .button .btn_4 {
+  background-color: #25282a;
 }
 
