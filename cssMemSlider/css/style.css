@@ -78,6 +78,7 @@ html, body, .container {
   width: 16vw;
   display: flex;
   justify-self: end;
+  justify-content: end;
 }
 
 @media (max-width: 768px) {
