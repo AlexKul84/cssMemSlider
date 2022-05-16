@@ -109,9 +109,13 @@ html, body, .container {
   border-radius: 50%;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #70aafe;
 }
+
+.btn:active {
+  background-color: red;
+} */
 
 .description {
   margin-left: 0;
@@ -218,5 +222,23 @@ html, body, .container {
 
 #image_4:checked:hover ~ .slider .buttons .button .btn_4 {
   background-color: #25282a;
+}
+
+/*  */
+
+#image_1:checked:active ~ .slider .buttons .button .btn_1 {
+  background-color: #ffffff;
+}
+
+#image_2:checked:active ~ .slider .buttons .button .btn_2 {
+  background-color: #ffffff;
+}
+
+#image_3:checked:active ~ .slider .buttons .button .btn_3 {
+  background-color: #ffffff;
+}
+
+#image_4:checked:active ~ .slider .buttons .button .btn_4 {
+  background-color: #ffffff;
 }
 
