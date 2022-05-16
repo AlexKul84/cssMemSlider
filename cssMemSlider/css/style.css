@@ -76,6 +76,7 @@ html, body, .container {
 
 .buttons {
   width: 16vw;
+  display: flex;
   justify-self: end;
 }
 
@@ -86,12 +87,9 @@ html, body, .container {
   }
   .buttons {
     grid-row: 2 / 3;
-    width: 8rem;
     justify-self: center;
   }
 }
-
-
 
 .button {
   display: inline-block;
@@ -108,14 +106,6 @@ html, body, .container {
   border: 1px solid #70aafe;
   border-radius: 50%;
 }
-
-/* .btn:hover {
-  background-color: #70aafe;
-}
-
-.btn:active {
-  background-color: red;
-} */
 
 .description {
   margin-left: 0;
@@ -202,6 +192,32 @@ html, body, .container {
 
 #image_4:hover ~ .slider .buttons .button .btn_4 {
   background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+/*  */
+
+#image_1:active ~ .slider .buttons .button .btn_1 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_2:active ~ .slider .buttons .button .btn_2 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_3:active ~ .slider .buttons .button .btn_3 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_4:active ~ .slider .buttons .button .btn_4 {
+  background-color: #25282a;
   border: 1px solid #ffffff;
 
 }
