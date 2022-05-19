@@ -96,7 +96,7 @@ html, body, .container {
   display: inline-block;
   padding: 1vw;
   cursor: pointer;
-  margin-top: 6px;
+  margin-top: 0.3rem;
 }
 
 .btn {
