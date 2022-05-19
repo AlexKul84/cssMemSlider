@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>CSS meme slider</title>
+</head>
+<body>
+  <div class="container">
+    <input id="image_1" class="radio" type="radio" name="slides" checked>
+    <input id="image_2" class="radio" type="radio" name="slides">
+    <input id="image_3" class="radio" type="radio" name="slides">
+    <input id="image_4" class="radio" type="radio" name="slides">
+
+    <div class="slider">
+
+        <div class="images">
+          <div class="images_wripper">
+            <div class="image_item image_1"><img src="assets/1.jpg" alt="image" class="image"></div>
+            <div class="image_item image_2"><img src="assets/2.jpg" alt="image" class="image"></div>
+            <div class="image_item image_3"><img src="assets/3.jpg" alt="image" class="image"></div>
+            <div class="image_item image_4"><img src="assets/4.jpg" alt="image" class="image"></div>
+          </div>
+        </div>
+
+        <div class="descriptions">
+          <div class="description_wrapper">
+            <p class="description description_1">2022</p>
+            <p class="description description_2">Этими ботинками я затоптал твою мамашу</p>
+            <p class="description description_3">Ты потрясающий!</p>
+            <p class="description description_4">Черешню неси</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <label for="image_1" class="button">
+            <span class="btn btn_1"></span>
+          </label>
+          <label for="image_2" class="button">
+            <span class="btn btn_2"></span>
+          </label>
+          <label for="image_3" class="button">
+            <span class="btn btn_3"></span>
+          </label>
+          <label for="image_4" class="button">
+            <span class="btn btn_4"></span>
+          </label>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

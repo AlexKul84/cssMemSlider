@@ -1,0 +1,261 @@
+html, body, .container {
+  height: 100%;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #25282a;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 48.8vw 15vw;
+  margin: 0px auto;
+  width: 63.3vw;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.images {
+  grid-column: 1 / 3;
+  width: 63.3vw;
+  height: 35.8vw;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.images_wripper {
+  display: flex;
+  column-gap: 1vw;
+  width: 256vw;
+  height: 35.6vw;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: .5s;
+}
+
+@media (max-width: 768px) {
+  .images {
+    grid-column: 1 / 2;
+  }
+}
+
+.image_item {
+  margin-left: 0;
+  width: 64vw;
+  display: inline-block;
+  transition: .5s;
+}
+
+.image {
+  width: 100%;
+}
+
+.descriptions {
+  width: 42vw;
+  height: 10vh;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.description_wrapper {
+  display: flex;
+  column-gap: 1vw;
+  width: 200vw;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.buttons {
+  width: 16vw;
+  display: flex;
+  justify-self: end;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .descriptions {
+    grid-row: 3 / 4;
+    justify-self: start;
+  }
+  .buttons {
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1vw;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #70aafe;
+  border: 1px solid #70aafe;
+  border-radius: 50%;
+}
+
+.description {
+  margin-left: 0;
+  width: 48.6vw;
+  display: inline-block;
+  transition: .5s;
+}
+
+.radio {
+  visibility: hidden;
+}
+
+#image_1:checked ~ .slider .images .images_wripper {
+  margin-left: -0.2vw;
+}
+
+#image_2:checked ~ .slider .images .images_wripper {
+  margin-left: -64.5vw;
+}
+
+#image_3:checked ~ .slider .images .images_wripper {
+  margin-left: -128.7vw;
+}
+
+#image_4:checked ~ .slider .images .images_wripper {
+  margin-left: -192.9vw;
+}
+
+/*  */
+
+#image_1:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: 0.1vw;
+}
+
+#image_2:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -49.4vw;
+}
+
+#image_3:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -99vw;
+}
+
+#image_4:checked ~ .slider .descriptions .description_wrapper {
+  margin-left: -148.7vw;
+}
+
+/*  */
+
+#image_1:checked ~ .slider .buttons .button .btn_1 {
+  background-color: #25282a;
+}
+
+#image_2:checked ~ .slider .buttons .button .btn_2 {
+  background-color: #25282a;
+}
+
+#image_3:checked ~ .slider .buttons .button .btn_3 {
+  background-color: #25282a;
+}
+
+#image_4:checked ~ .slider .buttons .button .btn_4 {
+  background-color: #25282a;
+}
+
+/*  */
+
+#image_1:hover ~ .slider .buttons .button .btn_1 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+#image_2:hover ~ .slider .buttons .button .btn_2 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+#image_3:hover ~ .slider .buttons .button .btn_3 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+#image_4:hover ~ .slider .buttons .button .btn_4 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+/*  */
+
+#image_1:active ~ .slider .buttons .button .btn_1 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_2:active ~ .slider .buttons .button .btn_2 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_3:active ~ .slider .buttons .button .btn_3 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+#image_4:active ~ .slider .buttons .button .btn_4 {
+  background-color: #25282a;
+  border: 1px solid #ffffff;
+
+}
+
+/*  */
+
+#image_1:checked:hover ~ .slider .buttons .button .btn_1 {
+  background-color: #25282a;
+}
+
+#image_2:checked:hover ~ .slider .buttons .button .btn_2 {
+  background-color: #25282a;
+}
+
+#image_3:checked:hover ~ .slider .buttons .button .btn_3 {
+  background-color: #25282a;
+}
+
+#image_4:checked:hover ~ .slider .buttons .button .btn_4 {
+  background-color: #25282a;
+}
+
+/*  */
+
+#image_1:checked:active ~ .slider .buttons .button .btn_1 {
+  background-color: #ffffff;
+}
+
+#image_2:checked:active ~ .slider .buttons .button .btn_2 {
+  background-color: #ffffff;
+}
+
+#image_3:checked:active ~ .slider .buttons .button .btn_3 {
+  background-color: #ffffff;
+}
+
+#image_4:checked:active ~ .slider .buttons .button .btn_4 {
+  background-color: #ffffff;
+}
+
